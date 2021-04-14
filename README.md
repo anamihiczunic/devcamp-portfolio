@@ -1,5 +1,3 @@
-# README
+Devcamp Portfolio Application
 
-This is my first app
-
-I'm following Udemys course Dissecting Ruby on Rails 5
+This is the first app in Udemys course Dissecting Ruby on Rails 5
