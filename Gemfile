@@ -35,6 +35,8 @@ gem 'jbuilder', '~> 2.5'
 #
 gem 'friendly_id', '~> 5.4.0'
 gem 'devise', '~> 4.7', '>= 4.7.3'
+gem 'bootstrap', '~> 4.1.3'
+gem 'jquery-rails'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
