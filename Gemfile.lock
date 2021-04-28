@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/anamihiczunic/anam_view_tool
+  revision: a9e1abf12cd3b64774b55a122e47e194ab07511b
+  branch: main
+  specs:
+    anam_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -198,6 +205,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  anam_view_tool!
   bootsnap (>= 1.1.0)
   bootstrap (~> 4.1.3)
   byebug
