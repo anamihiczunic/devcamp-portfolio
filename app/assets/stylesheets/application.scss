@@ -110,14 +110,16 @@ body {
 /*
  * Custom styles
  */
-.card-body{
+.card-body {
   color: black;
   text-align: left;
 }
-.card{
-  margin-top: 3em;
-  margin-bottom: 3em;
-}
 .auth-links a{
   color: black;
+}
+.row{
+  margin-bottom: 1em
+}
+.register-text{
+  text-align: right;
 }
