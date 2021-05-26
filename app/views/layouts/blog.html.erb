@@ -12,45 +12,21 @@
     <%= stylesheet_link_tag    'blogs', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
+  <body>
     <%= render "shared/blog_nav" %>
+    <%= render "shared/blog_header" %>
 
+    <main role="main" class="container">
+      <div class="row">
 
-    <!--    start of header-->
-    <div class="container">
-      <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
-        <div class="col-md-6 px-0">
-          <h1 class="display-4 font-italic">My Blogs</h1>
-          <p class="lead my-3">Welcome to my blogs page</p>
-          <p><%= link_to 'Write a New Blog', new_blog_path if logged_in?(:site_admin) %></p>
-        </div>
+        <%= yield %>
+
+        <%= render "shared/blog_sidebar" %>
       </div>
-    </div>
-    <!--    end of header-->
 
-    <!--  start of  blog body-->
-      <main role="main" class="container">
-        <div class="row">
+      <%= render "shared/blog_footer" %>
 
-          <%= yield %>
-
-          <%= render "shared/blog_sidebar" %>
-
-        </div>
-
-        <!--start of footer-->
-        <footer class="blog-footer">
-            <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-          <p>
-            <a href="#">Back to top</a>
-          </p>
-        </footer>
-<!--        end of footer-->
-
-        <hr>
-        <%= source_helper("blog") %>
-
-      </main><!-- /.container -->
-  <!--  end of  blog body-->
+      <%= source_helper("blog") %>
+    </main>
   </body>
 </html>

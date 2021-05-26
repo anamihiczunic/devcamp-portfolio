@@ -63,3 +63,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'anam_view_tool', git: "https://github.com/anamihiczunic/anam_view_tool", branch: :main
 gem 'petergate', '~> 2.0', '>= 2.0.1'
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.7'
+gem 'kaminari', '~> 1.2', '>= 1.2.1'
