@@ -44,3 +44,4 @@ gem 'gritter', '~> 1.2'
 gem 'twitter', '~> 7.0'
 gem 'faraday', '~> 1.4', '>= 1.4.2'
 gem 'redis', '~> 4.2', '>= 4.2.5'
+
