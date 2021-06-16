@@ -5,7 +5,22 @@
     <div class="row">
       <div class="col-md-4 profile-picture">
         <%= image_tag "guitar.jpg",  width: '100%', alt: "profile image" , class: "profile-image"%>
-
+        <div class="skills">
+          <% @skills.each do |skill| %>
+            <div class="skill">
+              <h4><%= skill.title %></h4>
+              <div class="progress">
+                <div
+                  class="progress-bar progress-bar-striped bg-warning"
+                  role="progressbar"
+                  aria-valuenow="<%= skill.percent_utilized %>"
+                  aria-valuemax="100"
+                  style="width: <%= skill.percent_utilized %>%"
+                ></div>
+              </div>
+            </div>
+          <% end %>
+        </div>
       </div>
       <div class="col-md-8">
         <p>I am a person who is positive about every aspect of life.
@@ -26,8 +41,8 @@
             type="button"
             data-toggle="collapse"
             data-target="#jobHistory"
-            area-expanded="false"
-            area-controller="jobHistory"
+            aria-expanded="false"
+            aria-controller="jobHistory"
           >
             Job History
           </button>
@@ -36,8 +51,8 @@
             type="button"
             data-toggle="collapse"
             data-target="#educationHistory"
-            area-expanded="false"
-            area-controller="educationHistory"
+            aria-expanded="false"
+            aria-controller="educationHistory"
           >
             Education
           </button>

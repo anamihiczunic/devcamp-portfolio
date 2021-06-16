@@ -157,6 +157,7 @@ body {
   .app-card-container{
     color: black;
     text-align: left;
+    //margin-top: 20px;
   }
 
   .profile-picture{
@@ -174,4 +175,13 @@ body {
 .card-block{
   margin: 5px;
   padding: 10px;
+}
+
+.skill{
+  margin: 5px;
+  padding: 5px;
+}
+
+.app-card-container{
+  margin-top: 5px;
 }
