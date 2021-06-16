@@ -6,8 +6,10 @@
     <title><%= @page_title %></title>
     <meta name="keywords" content="<%= @seo_keywords %>" />
     <%= csrf_meta_tags %>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
     <%= csp_meta_tag %>
-
+    <%= favicon_link_tag 'favicons/a.ico' %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -32,8 +34,6 @@
       <%= render "shared/application_footer" %>
 
       <%= alerts %>
-
-      <%= source_helper("application") %>
     </div>
   </body>
 </html>

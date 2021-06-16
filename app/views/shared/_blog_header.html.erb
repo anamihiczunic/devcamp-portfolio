@@ -1,9 +1,16 @@
 <div class="container">
-  <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+<!--  <div class="jumbotron p-4 p-md-5 text-white rounded bg-light  bg-dark">-->
+    <div class=" p-4 p-md-5 text-dark rounded  blog-header">
+
     <div class="col-md-6 px-0">
-      <h1 class="display-4 font-italic">My Blogs</h1>
+      <h1 class="display-4">My Blogs</h1>
       <p class="lead my-3">Welcome to my blogs page</p>
-      <p><%= link_to 'Write a New Blog', new_blog_path if logged_in?(:site_admin) %></p>
+      <span>
+        <%= link_to 'Write a New Blog', new_blog_path if logged_in?(:site_admin) %>
+      </span>
+      <span>
+        <%= link_to 'Topics', topics_path if logged_in?(:site_admin) %>
+      </span>
     </div>
   </div>
 </div>

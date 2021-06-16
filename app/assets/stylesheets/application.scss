@@ -27,10 +27,22 @@ a:hover {
  * Base structure
  */
 
+
 html,
 body {
   height: 100%;
+  font-family: 'Open Sans', sans-serif;
 }
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5{
+  font-family: 'Roboto', sans-serif;
+}
+
+
 
   body {
     display: -ms-flexbox;
@@ -153,3 +165,35 @@ body {
   .app-footer{
     color: white;
   }
+
+  .app-card-container{
+    color: black;
+    text-align: left;
+    //margin-top: 20px;
+  }
+
+  .profile-picture{
+    padding: 20px;
+  }
+
+.app-card-container > .card{
+  padding: 30px;
+  }
+
+.profile-image{
+  border: 1px sold gray;
+}
+
+.card-block{
+  margin: 5px;
+  padding: 10px;
+}
+
+.skill{
+  margin: 5px;
+  padding: 5px;
+}
+
+.app-card-container{
+  margin-top: 5px;
+}
