@@ -2,7 +2,9 @@
 @import "font-awesome";
 @import "gritter";
 
-/* stylelint-disable selector-list-comma-newline-after */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
 
 .blog-header {
   line-height: 1;
@@ -19,7 +21,7 @@
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .display-4 {
@@ -136,6 +138,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .blog-header{
   background-color: lightgray;
+  margin-bottom: 20px;
 }
 
 .blog-main-padding{
